@@ -9,12 +9,19 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h2>Piedra Papel Tijeras</h2>
+        <script src="script.js"></script>
+       
+        <h2>Piedra Papel Tijeras</h2>    
+         
         <div>
-            <button type="button" onclick="Rock()"><img src="piedra.jfif" alt="Piedra"></button>
-            <button type="button" onclick="Paper()"><img src="papel.jfif" alt="Papel"></button>
-            <button type="button" onclick="Scissors()"><img src="tijeras.jfif" alt="Tijeras"></button>
-            <script src="script.js"></script>
-        </div>
+                <button type="button" id="Rock" onclick="Rock()"><img src="src/piedra.jfif" alt="Piedra"></button>
+                <button type="button" id="Paper" onclick="Paper()"><img src="src/papel.jfif" alt="Papel"></button>
+                <button type="button" id="Scissors" onclick="Scissors()"><img src="src/tijeras.jfif" alt="Tijeras"></button>
+            </div>
+      
+         <dialog id="resultado">
+                <span id="frase"></span><br>
+                <button id="Retry" onclick="this.parentElement.close()">Volve a jugar</button>
+        </dialog>
     </body>
 </html>
